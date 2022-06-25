@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:semesta/Kehadiran/kehadiran.dart';
 
 class Beranda extends StatefulWidget {
   @override
@@ -326,14 +327,14 @@ class _BerandaState extends State<Beranda> with TickerProviderStateMixin {
                 width: 60,
                 child: InkWell(
                   onTap: () {
-                    // Navigator.push(context, MaterialPageRoute(builder: (context) => DaftarOutlet()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Kehadiran(alfa: true, izin: false, sakit: false)));
                   },
                   child: Column(
                     children: [
                       Icon(
                         Icons.library_add_check_outlined,
                         size: 30,
-                        color: Color.fromARGB(154, 69, 108, 251),
+                        color: Color.fromARGB(154, 69, 108, 251)
                       ),
                       Text(
                         'Kehadiran',
@@ -362,12 +363,12 @@ class _BerandaState extends State<Beranda> with TickerProviderStateMixin {
                   child: Column(
                     children: [ 
                       Icon(
-                        Icons.receipt_outlined,
+                        Icons.chat_outlined,
                         size: 30,
                         color: Color.fromARGB(154, 69, 108, 251)
                       ),
                       Text(
-                        'Order',
+                        'Chat',
                         style: TextStyle(color: Color.fromARGB(154, 69, 108, 251))
                       )
                     ]
