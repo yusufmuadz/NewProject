@@ -79,7 +79,7 @@ class _VerifikasiRegisState extends State<VerifikasiRegis> {
                   /////   }
                   /////   _id_outlet = idOutlet;
                   /////   return null;
-                  ///// },
+                  ///// }
                 ),
               Container(
                 height: 50,
