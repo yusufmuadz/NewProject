@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:semesta/Chat/chat.dart';
 import 'package:semesta/Kehadiran/kehadiran.dart';
 
 class Beranda extends StatefulWidget {
@@ -428,7 +429,7 @@ class _BerandaState extends State<Beranda> with TickerProviderStateMixin {
                           width: 60,
                           child: InkWell(
                               onTap: () {
-                                // Navigator.push(context, MaterialPageRoute(builder: (context) => DaftarOrder()));
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Chat()));
                               },
                               child: Column(children: [
                                 Icon(Icons.chat_outlined,

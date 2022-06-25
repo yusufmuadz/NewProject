@@ -1,6 +1,7 @@
 // @dart=2.9
 
 import 'package:flutter/material.dart';
+import 'package:semesta/Chat/chat.dart';
 import 'package:semesta/beranda.dart';
 
 class Kehadiran extends StatefulWidget {
@@ -591,7 +592,7 @@ class _KehadiranState extends State<Kehadiran> {
                           width: 60,
                           child: InkWell(
                               onTap: () {
-                                // Navigator.push(context, MaterialPageRoute(builder: (context) => DaftarOrder()));
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Chat()));
                               },
                               child: Column(children: [
                                 Icon(Icons.chat_outlined,
