@@ -44,7 +44,7 @@ class _VerifikasiRegisState extends State<VerifikasiRegis> {
             children: [
               RichText(
                 text: const TextSpan(
-                  text: 'Masukkan Kode OTP yang dikirimkan ke nomor telepon ',
+                  text: 'Masukkan Kode OTP yang dikirimkan ke nomor telepon',
                   style: TextStyle(fontFamily: 'Poppins', fontSize: 13, fontWeight: FontWeight.w400, color: Color(0xFF909090)),
                 children: [
                   TextSpan(text: '081234567124.',
