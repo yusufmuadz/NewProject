@@ -3,6 +3,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:semesta/Registrasi/registrasi.dart';
 import 'package:semesta/verifikasi.dart';
 
 class Login extends StatefulWidget {
@@ -227,7 +228,7 @@ class _LoginState extends State<Login> with TickerProviderStateMixin {
                     fontSize: 15,
                     fontWeight: FontWeight.w400)),
                     InkWell(
-                      onTap: (){},
+                      onTap: (){Navigator.push(context, MaterialPageRoute(builder: (_) => Registrasi()));},
                       child:
                     Text(" Daftar disini",
                       style: TextStyle(
