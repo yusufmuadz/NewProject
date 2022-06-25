@@ -188,7 +188,7 @@ class _BerandaState extends State<Beranda> with TickerProviderStateMixin {
                 physics: NeverScrollableScrollPhysics(),
                 itemBuilder: (context, index){
                   return Container(
-                    margin: EdgeInsets.only(right: 5, left: 5),
+                    margin: EdgeInsets.only(right: 10, left: 10),
                     child: Column(
                       children: [
                         Row(
@@ -201,6 +201,65 @@ class _BerandaState extends State<Beranda> with TickerProviderStateMixin {
                           child: Icon(Icons.article, size: 25, color: Color(0xFFFF2C00)))
                       ],
                     ),
+                    Divider(thickness: 1, height: 25, color: index == 2 - 1 ? Colors.transparent : Color(0xFFECEFF1))
+                      ],
+                    )
+                  );
+                }),
+                // SizedBox(height: 15),
+              Container(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text('Daftar Guru', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
+                                InkWell(onTap: (){}, child: Text('Lihat Semua', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Color(0xFF0C68AB))))
+                              ]
+                            )),
+                            SizedBox(height: 10),
+                            Row(
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.all(10),
+                                  width: MediaQuery.of(context).size.width/2-25,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(width: 1, color: Color(0xFFECEFF1))
+                                  ),
+                                  child: Text("Nama", style: TextStyle(fontSize: 17, fontWeight: FontWeight.w600)),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(10),
+                                  width: MediaQuery.of(context).size.width/2-25,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(width: 1, color: Color(0xFFECEFF1))
+                                  ),
+                                  child: Text("Peran", style: TextStyle(fontSize: 17, fontWeight: FontWeight.w600)),
+                                )
+                              ],
+                            ),
+                            SizedBox(height: 10),
+              ListView.builder(
+                itemCount: 2,
+                shrinkWrap: true,
+                padding: EdgeInsets.zero,
+                physics: NeverScrollableScrollPhysics(),
+                itemBuilder: (context, index){
+                  return Container(
+                    margin: EdgeInsets.only(right: 10, left: 10),
+                    child: Column(
+                      children: [
+                        Row(
+                              children: [
+                                Container(
+                                  width: MediaQuery.of(context).size.width/2-30,
+                                  child: Text("Ahmad Syam", style: TextStyle(fontSize: 17, fontWeight: FontWeight.w400, color: Color(0xFF8A8A8A)))
+                                ),
+                                Container(
+                                  width: MediaQuery.of(context).size.width/2-30,
+                                  child: Text("Kepala Sekolah", style: TextStyle(fontSize: 17, fontWeight: FontWeight.w400, color: Color(0xFF8A8A8A)))
+                                )
+                              ],
+                            ),
                     Divider(thickness: 1, height: 25, color: index == 2 - 1 ? Colors.transparent : Color(0xFFECEFF1))
                       ],
                     )
@@ -271,18 +330,16 @@ class _BerandaState extends State<Beranda> with TickerProviderStateMixin {
                   },
                   child: Column(
                     children: [
-                      Container(
-                        height: 30,
-                        width: 30,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(image: AssetImage('assets/image/GambarAsli/outletoff.png'), fit: BoxFit.cover)
-                        )
+                      Icon(
+                        Icons.library_add_check_outlined,
+                        size: 30,
+                        color: Color.fromARGB(154, 69, 108, 251),
                       ),
                       Text(
-                        'Outlet',
+                        'Kehadiran',
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(color: Color(0xFF909090)),
+                        style: TextStyle(color: Color.fromARGB(154, 69, 108, 251))
                       )
                     ],
                   ),
@@ -294,7 +351,7 @@ class _BerandaState extends State<Beranda> with TickerProviderStateMixin {
                   child: Text(
                     'Absen',
                     textAlign: TextAlign.center,
-                    style: TextStyle(color: Color(0xFF909090)),
+                    style: TextStyle(color: Color.fromARGB(154, 69, 108, 251))
                   )),
               Container(
                 width: 60,
@@ -307,11 +364,11 @@ class _BerandaState extends State<Beranda> with TickerProviderStateMixin {
                       Icon(
                         Icons.receipt_outlined,
                         size: 30,
-                        color: Color(0xFF909090),
+                        color: Color.fromARGB(154, 69, 108, 251)
                       ),
                       Text(
                         'Order',
-                        style: TextStyle(color: Color(0xFF909090)),
+                        style: TextStyle(color: Color.fromARGB(154, 69, 108, 251))
                       )
                     ]
                   )
@@ -328,11 +385,11 @@ class _BerandaState extends State<Beranda> with TickerProviderStateMixin {
                       Icon(
                         Icons.person_outline,
                         size: 30,
-                        color: Color(0xFF909090),
+                        color: Color.fromARGB(154, 69, 108, 251)
                       ),
                       Text(
                         'Profile',
-                        style: TextStyle(color: Color(0xFF909090))
+                        style: TextStyle(color: Color.fromARGB(154, 69, 108, 251))
                       )
                     ]
                   )
