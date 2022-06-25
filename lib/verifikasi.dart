@@ -5,6 +5,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
+import 'package:semesta/beranda.dart';
 
 class Verifikasi extends StatefulWidget {
 
@@ -275,7 +276,7 @@ class _VerifikasiState extends State<Verifikasi> with SingleTickerProviderStateM
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(7),
             color:Color.fromARGB(135, 171, 12, 115)),
               child: MaterialButton(onPressed: (){
-                // Navigator.push(context, MaterialPageRoute(builder: (context) => Beranda()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Beranda()));
               },
               child: Text("Verifikasi", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Colors.white))))
           ],

@@ -4,6 +4,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
+import 'package:semesta/beranda.dart';
 import 'package:semesta/login.dart';
 
 class VerifikasiRegis extends StatefulWidget {
@@ -87,7 +88,7 @@ class _VerifikasiRegisState extends State<VerifikasiRegis> {
                 margin: EdgeInsets.only(top: 15),
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(2), color: Color(0xFF0C68AB)),
                 child: MaterialButton(onPressed: (){
-                  // Navigator.push(context, MaterialPageRoute(builder: (context) => Beranda()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Beranda()));
                 },
                 child: Text("Masuk", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Colors.white)))),
               Container(
