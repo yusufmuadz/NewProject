@@ -164,7 +164,7 @@ class _BerandaState extends State<Beranda> with TickerProviderStateMixin {
                         // textAlign: TextAlign.center,
                         style: TextStyle(
                             fontSize: 14,
-                            fontWeight: FontWeight.bold)),
+                            fontWeight: FontWeight.bold))
                       ],
                     )
                   ],
