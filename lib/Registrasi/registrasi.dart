@@ -12,7 +12,7 @@ class _RegistrasiState extends State<Registrasi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      body: Container(),
     );
   }
 }
