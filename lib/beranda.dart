@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:semesta/Absen/absen.dart';
 import 'package:semesta/Chat/chat.dart';
 import 'package:semesta/Kehadiran/kehadiran.dart';
+import 'package:semesta/profile.dart';
 
 class Beranda extends StatefulWidget {
   @override
@@ -345,7 +347,7 @@ class _BerandaState extends State<Beranda> with TickerProviderStateMixin {
         extendBody: true,
         floatingActionButton: FloatingActionButton(
             onPressed: () {
-              // Navigator.push(context, MaterialPageRoute(builder: (_) => Presensi()));
+              Navigator.push(context, MaterialPageRoute(builder: (_) => Absen()));
             },
             elevation: 0,
             child: Container(
@@ -444,7 +446,7 @@ class _BerandaState extends State<Beranda> with TickerProviderStateMixin {
                           width: 60,
                           child: InkWell(
                               onTap: () {
-                                // Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()));
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()));
                               },
                               child: Column(children: [
                                 Icon(Icons.person_outline,

@@ -1,8 +1,10 @@
 // @dart=2.9
 
 import 'package:flutter/material.dart';
+import 'package:semesta/Absen/absen.dart';
 import 'package:semesta/Chat/chat.dart';
 import 'package:semesta/beranda.dart';
+import 'package:semesta/profile.dart';
 
 class Kehadiran extends StatefulWidget {
   Kehadiran({this.alfa, this.izin, this.terlambat});
@@ -514,7 +516,7 @@ class _KehadiranState extends State<Kehadiran> {
         extendBody: true,
         floatingActionButton: FloatingActionButton(
             onPressed: () {
-              // Navigator.push(context, MaterialPageRoute(builder: (_) => Presensi()));
+              Navigator.push(context, MaterialPageRoute(builder: (_) => Absen()));
             },
             elevation: 0,
             child: Container(
@@ -607,7 +609,7 @@ class _KehadiranState extends State<Kehadiran> {
                           width: 60,
                           child: InkWell(
                               onTap: () {
-                                // Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()));
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()));
                               },
                               child: Column(children: [
                                 Icon(Icons.person_outline,

@@ -1,9 +1,11 @@
 // @dart=2.9
 
 import 'package:flutter/material.dart';
+import 'package:semesta/Absen/absen.dart';
 import 'package:semesta/Chat/detail.dart';
 import 'package:semesta/Kehadiran/kehadiran.dart';
 import 'package:semesta/beranda.dart';
+import 'package:semesta/profile.dart';
 
 class Chat extends StatefulWidget {
   @override
@@ -93,7 +95,7 @@ class _ChatState extends State<Chat> {
         extendBody: true,
         floatingActionButton: FloatingActionButton(
             onPressed: () {
-              // Navigator.push(context, MaterialPageRoute(builder: (_) => Presensi()));
+              Navigator.push(context, MaterialPageRoute(builder: (_) => Absen()));
             },
             elevation: 0,
             child: Container(
@@ -185,7 +187,7 @@ class _ChatState extends State<Chat> {
                           width: 60,
                           child: InkWell(
                               onTap: () {
-                                // Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()));
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()));
                               },
                               child: Column(children: [
                                 Icon(Icons.person_outline,
